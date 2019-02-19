@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>TRIVIA GAME</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+
+<head>
+  <h1>TRIVIA GAME</h1>
+</head>
+
+<body>
+  <div id="saludo">
+    <img src="https://media1.tenor.com/images/0cec2ad55884b01985b7f8ff7f7d385a/tenor.gif?itemid=9621152">
+    <p> Bienvenidx a Fondo de Bikini, tienes dos opciones, cada una de ellas con 3 preguntas si aciertas puedes ganar increibles premios. Registrate y dale click a siguiente </p>
+   
+       
+    <button onclick="myFunction()">Registrarme</button> 
+  </div>
+
+  <div id="siguiente1">
+  
+    <p id="demo"></p>
+    
+    <button onclick="changeVisibility()">Siguiente</button>
+    
+    </div>
+
+  
+ 
+  <div id="buena suerte" style="display:none">
+ 
+    <p> Estan listxs? No los escucho... Buena suerte Marinerx, escoge entre estas dos opciones</p>
+    <button onclick="changeVisibility1()">Fondo de Bikini</button>
+    <button onclick="changeVisibility2()">Crustáceo Kaskarudo</button>
+   
+  </div>
+
+  
+  <div id="quizFondodeBikini" style='display:none;'>
+   
+    <div>
+    <p> ¿Quien es el papá de Perlita? </p>
+    
+    <input type="radio" id="Don Cangrejo" name="question1" value="correct"> 
+  <label for="Don Cangrejo">Don cangrejo</label><br>
+
+  <input type="radio" id="Larry" name="question1" value="incorrect">
+  <label for="dewey">Larry</label><br>
+
+  <input type="radio" id="Calamardo" name="question1" value="incorrect">
+  <label for="Calamardo">Calamardo</label>
+    </div>
+   
+    <div> 
+    <p>¿Quien es el mejor amigo de Bob Esponja?</p>
+
+  <input type="radio" id="Calamardo" name="question2" value="incorrect">
+  <label for="Calamardo">Calamardo</label><br>
+
+  <input type="radio" id="Arenita" name="question2" value="incorrect">
+  <label for="Arenita">Arenita</label><br>
+
+  <input type="radio" id="Patricio" name="question2" value="correct">
+  <label for="Patricio">Patricio</label>
+</div>
+    
+    <div>
+  <p>¿Quien es la instructora de manejo de Bob Esponja?</p>
+
+  <input type="radio" id="Señora Puff" name="question3" value="correct">
+  <label for="Señora Puff">Señora Puff</label><br>
+
+  <input type="radio" id="Gary" name="question3" value="incorrect">
+  <label for="Gary">Gary</label><br>
+
+  <input type="radio" id="Perlita" name="question3" value="incorrect">
+  <label for="Perlita">Perlita</label>
+</div>
+    <button onclick="changeVisibility3()">Enviar trivia</button>
+  </div>
+  
+  
+<div id="CrustáceoKaskarudo" style='display:none;'>
+  
+  <div>
+  <p>¿Quien es el chef del KK?</p>
+
+  <input type="radio" id="Patricio" name="questions1" value="incorrect">
+  <label for="Patricio">Patricio</label><br>
+
+  <input type="radio" id="Bob Esponja" name="questions1" value="correct">
+  <label for="Gary">Bob Esponja</label><br>
+
+  <input type="radio" id="Don Cangrejo" name="questions1" value="incorrect">
+  <label for="Don Cangrejo">Don Cangrejo</label>
+</div>
+  
+  
+  <div>
+  <p>¿Quien intenta robar la Formula Secreta de las Kangreburguers?</p>
+
+  <input type="radio" id="Gary" name="questions2" value="incorrect">
+  <label for="Gary">Gary</label><br>
+
+  <input type="radio" id="Placton" name="questions2" value="correct">
+  <label for="Placton">Placton</label><br>
+
+  <input type="radio" id="Arenita" name="questions2" value="incorrect">
+  <label for="Arenita">Arenita</label>
+</div>
+  
+  
+  <div>
+  <p>¿Que llevan las Kangreburguers?</p>
+
+  <input type="radio" id="caracoles" name="questions3" value="incorrect">
+  <label for="caracoles">caracoles</label><br>
+
+  <input type="radio" id="algas" name="questions3" value="incorrect">
+  <label for="algas">algas</label><br>
+
+  <input type="radio" id="shhh es secreto" name="questions3" value="correct">
+  <label for="shhh es secreto">es secreto</label><br>
+ 
+    
+<button id="results-btn" type="submit">Enviar Trivia</button>
+   
+  </div>
+  
+  <div id="results" style="display:none">
+       <p><strong id="right-answers"></strong></p>
+                <div id="winner">
+                    <h2 id="winner-text"></h2>
+                </div>
+                <div id="loser">
+                  <h2 id="loser-text"></h2>
+             
+  
+  <button onclick="changeVisibility1()">Fondo de Bikini</button>
+    <button onclick="changeVisibility2()">Crustáceo Kaskarudo</button>
+  <button onclick="changeVisibility5()">Inicio</button>
+  </div>
+  </div>
+ 
+  
+  </body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
